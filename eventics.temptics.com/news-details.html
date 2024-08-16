@@ -1,0 +1,761 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css" />
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css" />
+    <title>Eventics</title>
+
+    <!-- tailwind css -->
+    <link href="src/output.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- overlay -->
+    <div class="et-overlay group">
+        <div class="opacity-0 pointer-events-none group-[.active]:opacity-100 group-[.active]:pointer-events-auto transition ease-linear duration-300  bg-etBlack/80 fixed inset-0 z-[60]"></div>
+    </div>
+    <!-- overlay -->
+
+    <!-- sidebar -->
+    <div class="et-sidebar group">
+        <div class=" group-[.active]:translate-x-0 translate-x-[100%] transition-transform ease-linear duration-300 fixed right-0 w-full max-w-[25%] xl:max-w-[30%] lg:max-w-[40%] md:max-w-[50%] sm:max-w-[60%] xxs:max-w-full bg-[#18377e] h-full z-[100] overflow-auto p-[50px] lg:p-[30px] space-y-[40px]">
+            <!-- heading -->
+            <div class="et-sidebar-heading">
+                <div class="logo flex justify-between items-center">
+                    <a href="index.html"><img src="assets/img/logo-white.png" alt="logo"></a>
+
+                    <button type="button" class="et-sidebar-close-btn border border-white/50 w-[45px] aspect-square shrink-0 text-white text-[22px] rounded-full hover:text-etBlue hover:bg-white"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="et-header-nav-in-mobile"></div>
+        </div>
+    </div>
+
+    <!-- HEADER SECTION START -->
+    <header class="et-header to-be-fixed py-[30px] xxs:py-[20px] fixed top-0 w-full px-[155px] xxxl:px-[100px] xxl:px-[40px] xs:px-[20px] z-50">
+        <div class="flex justify-between items-center">
+            <!-- logo -->
+            <div class="logo shrink-0">
+                <a href="index.html">
+                    <img src="assets/img/logo-white.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="right flex items-center gap-[60px] xl:gap-[30px]">
+                <div class="to-go-to-sidebar-in-mobile flex md:flex-col md:items-start items-center gap-[100px] xl:gap-[30px] md:gap-y-[15px]">
+                    <!-- nav -->
+                    <ul class="et-header-nav flex md:flex-col gap-x-[43px] xl:gap-x-[33px] font-kanit text-[17px] font-normal">
+                        <li class="has-sub-menu relative">
+                            <a role="button">Home</a>
+
+                            <ul class="et-header-submenu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index-2.html">Home 02</a></li>
+                                <li><a href="index-3.html">Home 03</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About us</a></li>
+                        <li class="has-sub-menu relative">
+                            <a role="button">Events</a>
+
+                            <ul class="et-header-submenu">
+                                <li><a href="events.html">All Events</a></li>
+                                <li><a href="event-details.html">Events Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub-menu relative">
+                            <a role="button">Pages</a>
+
+                            <ul class="et-header-submenu">
+                                <li><a href="pricing.html">Pricing Plan</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="sponsor.html">Sponsors</a></li>
+                                <li><a href="venue.html">Venue</a></li>
+                                <li><a href="404.html">Error 404</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub-menu relative">
+                            <a role="button">Team</a>
+
+                            <ul class="et-header-submenu">
+                                <li><a href="team.html">Team Members</a></li>
+                                <li><a href="team-member-details.html">Team Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub-menu relative">
+                            <a role="button">News</a>
+
+                            <ul class="et-header-submenu">
+                                <li><a href="news.html">All News</a></li>
+                                <li><a href="news-details.html">News Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <!-- button -->
+                    <a href="#" class="et-btn bg-white flex items-center justify-center gap-x-[15px] h-[50px] px-[15px] text-etBlue font-medium text-[17px] rounded-full group">
+                        <span class="icon">
+                            <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.02101 0H0.844661C0.378197 0 0 0.378144 0 0.844662V5.12625C0 5.59277 0.378197 5.97091 0.844661 5.97091C1.96347 5.97091 2.8737 6.88114 2.8737 8C2.8737 9.11886 1.96347 10.029 0.844661 10.029C0.378197 10.029 0 10.4071 0 10.8736V15.1553C0 15.6218 0.378197 15.9999 0.844661 15.9999H8.02101V0Z" class="fill-etBlue group-hover:fill-white transition" />
+                                <path d="M26.0001 5.97091C26.4665 5.97091 26.8447 5.59277 26.8447 5.12625V0.844662C26.8447 0.378144 26.4665 0 26.0001 0H9.71094V16H26.0001C26.4665 16 26.8447 15.6219 26.8447 15.1553V10.8737C26.8447 10.4072 26.4665 10.029 26.0001 10.029C24.8813 10.029 23.971 9.11886 23.971 8C23.971 6.88114 24.8813 5.97091 26.0001 5.97091Z" class="fill-etBlue group-hover:fill-white transition" />
+                            </svg>
+                        </span>
+                        Get Tickets</a>
+                </div>
+
+                <!-- mobile menu button -->
+                <button type="button" class="et-mobile-menu-open-btn hidden md:inline-block bg-etBlue rounded-full w-[50px] aspect-square text-white text-[18px] hover:bg-etBlue"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+
+    <main>
+        <!-- BREADCRUMB SECTION START -->
+        <section class="et-breadcrumb bg-[#000D83] pt-[210px] lg:pt-[190px] sm:pt-[160px] pb-[130px] lg:pb-[110px] sm:pb-[80px] relative z-[1] before:absolute before:inset-0 before:bg-[url('../assets/img/breadcrumb-bg.jpg')] before:bg-no-repeat before:bg-cover before:bg-center before:-z-[1] before:opacity-30">
+            <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full text-center text-white">
+                <h1 class="et-breadcrumb-title font-medium text-[56px] md:text-[50px] xs:text-[45px]">Blog Details</h1>
+                <ul class="inline-flex items-center gap-[10px] font-medium text-[16px]">
+                    <li class="opacity-80"><a href="index.html" class="hover:text-etBlue">Home</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></li>
+                    <li class="current-page">Blog Details</li>
+                </ul>
+            </div>
+        </section>
+        <!-- BREADCRUMB SECTION END -->
+
+        <!-- MAIN CONTENT START -->
+        <div class="et-event-details-content py-[130px] lg:py-[80px] md:py-[60px]">
+            <div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+                <div class="flex gap-[30px] lg:gap-[20px] md:flex-col md:items-center">
+                    <!-- left content -->
+                    <div class="left grow space-y-[40px] md:space-y-[30px]">
+                        <!-- post -->
+                        <div>
+                            <div class="img overflow-hidden rounded-[8px] mb-[30px] relative">
+                                <img src="assets/img/blog-4.jpg" alt="blog-cover" class="w-full">
+
+                                <div class="bg-etBlue rounded-[6px] absolute top-[20px] left-[20px] text-white px-[20px] py-[13px]">
+                                    <span class="block text-[24px] font-medium leading-[0.7] mb-[6px]">15</span>
+                                    <span class="block text-[12px] font-medium leading-[0.7]">Dec</span>
+                                </div>
+                            </div>
+
+                            <!-- txt -->
+                            <div>
+                                <!-- infos -->
+                                <div class="flex items-center gap-[30px] mb-[7px]">
+                                    <!-- single info -->
+                                    <div class="flex gap-[10px] items-center">
+                                        <span class="shrink-0">
+                                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5435 5.19275C13.5435 7.69093 11.4989 9.7355 9.00075 9.7355C6.50262 9.7355 4.45804 7.69093 4.45804 5.19275C4.45804 2.69457 6.50258 0.65 9.00075 0.65C11.4989 0.65 13.5435 2.69458 13.5435 5.19275Z" class="stroke-etBlue" stroke-width="1.3" />
+                                                <path d="M17.2644 14.6708C17.1052 14.946 16.9241 15.2075 16.7169 15.4769L16.7168 15.4768L16.7089 15.4875C16.4203 15.8791 16.0845 16.2376 15.7295 16.5926C15.4326 16.8894 15.0932 17.1863 14.7568 17.4387C13.0794 18.6913 11.0622 19.3501 8.97815 19.3501C6.89837 19.3501 4.88507 18.694 3.20977 17.4463C2.84588 17.1507 2.51368 16.8795 2.22687 16.5927L2.2199 16.5857L2.21272 16.5789C1.85663 16.2438 1.54239 15.8879 1.24746 15.4876L1.24748 15.4876L1.24414 15.4831C1.06193 15.2402 0.873212 14.9758 0.719199 14.7172C0.836191 14.4561 0.984554 14.1849 1.14522 13.9529L1.14533 13.9529L1.15285 13.9416C2.06985 12.5559 3.53706 11.6391 5.16643 11.415L5.18601 11.4123L5.20539 11.4084C5.23087 11.4033 5.29495 11.4119 5.34548 11.4498L5.34547 11.4498L5.34948 11.4528C6.41651 12.2403 7.6863 12.6456 9.0008 12.6456C10.3153 12.6456 11.5851 12.2403 12.6521 11.4528L12.6521 11.4528L12.6561 11.4498C12.6715 11.4382 12.7403 11.4082 12.8492 11.417C14.4688 11.6438 15.9121 12.557 16.8524 13.9471L16.8524 13.9471L16.8564 13.9529C17.0165 14.1842 17.1557 14.4234 17.2644 14.6708Z" class="stroke-etBlue" stroke-width="1.3" />
+                                            </svg>
+                                        </span>
+                                        <span class="text-[14px] text-etGray">by <a href="#">Admin</a></span>
+                                    </div>
+
+                                    <!-- single info -->
+                                    <div class="flex gap-[10px] items-center">
+                                        <span class="shrink-0">
+                                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.05666 18.75H8.05504C7.46832 18.7495 6.91657 18.5207 6.50187 18.1052L0.660341 12.2553C-0.194072 11.3994 -0.194072 10.0065 0.660341 9.15058L8.53478 1.26102C9.3463 0.44792 10.426 0 11.575 0H16.5709C17.7824 0 18.7682 0.985546 18.7682 2.19726V7.17785C18.7682 8.32602 18.3208 9.40532 17.5084 10.2167L9.60951 18.1074C9.19455 18.5218 8.64306 18.75 8.05666 18.75ZM11.575 1.46484C10.8179 1.46484 10.1064 1.75998 9.57163 2.29579L1.69707 10.1853C1.41222 10.4708 1.41222 10.9349 1.69707 11.2203L7.53857 17.0702C7.6767 17.2086 7.86051 17.285 8.05619 17.2851H8.05677C8.1529 17.2854 8.24812 17.2666 8.33694 17.2299C8.42577 17.1931 8.50643 17.1391 8.57427 17.071L16.4732 9.18046C17.0086 8.6458 17.3034 7.93447 17.3034 7.17788V2.19726C17.3034 1.79341 16.9748 1.46484 16.5709 1.46484H11.575ZM13.458 7.43408C12.2465 7.43408 11.2608 6.44853 11.2608 5.23681C11.2608 4.0251 12.2465 3.03955 13.458 3.03955C14.6696 3.03955 15.6553 4.0251 15.6553 5.23681C15.6553 6.44853 14.6696 7.43408 13.458 7.43408ZM13.458 4.50439C13.0542 4.50439 12.7256 4.83296 12.7256 5.23681C12.7256 5.64067 13.0542 5.96924 13.458 5.96924C13.862 5.96924 14.1905 5.64067 14.1905 5.23681C14.1905 4.83296 13.862 4.50439 13.458 4.50439Z" class="fill-etBlue" />
+                                            </svg>
+                                        </span>
+                                        <span class="text-[14px] text-etGray"><a href="#">Education</a></span>
+                                    </div>
+                                </div>
+
+                                <h3 class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[21px]"><a href="news-details.html" class="hover:text-etBlue">Make Your Expanding Contracting Content</a></h3>
+
+                                <p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
+
+                                <p class="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is sodales augue consequat.</p>
+
+                                <p class="font-light text-[16px] text-etGray mb-[16px]">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.</p>
+
+                                <!-- img -->
+                                <div class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] mt-[32px] mb-[33px]">
+                                    <img src="assets/img/news-details-img-1.jpg" alt="Image" class="rounded-[8px]">
+                                    <img src="assets/img/news-details-img-2.jpg" alt="Image" class="rounded-[8px]">
+                                </div>
+
+                                <p class="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac sodales habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is augue consequat.</p>
+
+                                <blockquote class="bg-[#EEF2F3] italic rounded-[10px] border-l-4 border-etBlue px-[40px] pr-[120px] py-[30px] mt-[32px] mb-[28px] relative text-[16px] font-light">Pellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.
+
+                                    <span class="icon absolute right-[40px] bottom-[35px]">
+                                        <svg width="36" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 15.3691H7.71428L2.57139 25.5539H10.2857L15.4286 15.3691V0.0917969H0V15.3691Z" class="fill-etBlue" />
+                                            <path d="M20.5703 0.0917969V15.3691H28.2846L23.1417 25.5539H30.856L35.9989 15.3691V0.0917969H20.5703Z" class="fill-etBlue" />
+                                        </svg>
+                                    </span>
+                                </blockquote>
+
+                                <p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
+                            </div>
+                        </div>
+
+                        <!-- actions -->
+                        <div class="border-y border-[#d9d9d9] py-[24px] flex items-center justify-between xs:flex-col xs:items-start gap-[20px]">
+                            <div class="flex gap-[28px] items-center">
+                                <!-- tags  -->
+                                <h6 class="font-medium text-[16px] text-etBlack">Tags:</h6>
+                                <div class="flex flex-wrap gap-[13px]">
+                                    <a href="#" class="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">Course</a>
+                                    <a href="#" class="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">Education</a>
+                                </div>
+                            </div>
+
+                            <!-- share options -->
+                            <div class="flex gap-[28px] items-center">
+                                <h6 class="font-medium text-[16px] text-etBlack">Share:</h6>
+                                <div class="flex gap-[15px] text-[16px]">
+                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#" class="text-[#757277] hover:text-etBlue"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- comments -->
+                        <div class="!mt-[60px] xxs:!mt-[30px]">
+                            <h5 class="font-medium text-[24px] text-etBlack mb-[32px] xxs:mb-[20px]">02 Comments</h5>
+
+                            <div class="all-comments space-y-[40px] xxs:space-y-[25px]">
+                                <!-- single comment -->
+                                <div class="et-event-details-comment flex xxs:flex-col items-start gap-x-[20px] pb-[40px] xxs:pb-[25px] border-b border-[#ECECEC]">
+                                    <div class="user-img rounded-full overflow-hidden w-[96px] h-[96px] shrink-0">
+                                        <img src="assets/img/user.jpg" alt="user" class="object-cover w-full h-full">
+                                    </div>
+
+                                    <div class="pt-[17px]">
+                                        <div class="user-info mb-[19px]">
+                                            <h5 class="user-name font-medium text-[20px] text-etBlack mb-[9px]">Ralph edwards</h5>
+                                            <h6 class="font-normal text-[16px] text-etGray">February 10, 2024 at 2:37 pm</h6>
+                                        </div>
+                                        <div class="comment">
+                                            <p class="text-[16px] text-etGray2">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.
+                                            </p>
+                                        </div>
+
+                                        <button class="h-[30px] px-[16px] bg-etBlue text-[14px] text-white rounded-[6px] mt-[22px] hover:bg-etBlack">Reply</button>
+                                    </div>
+                                </div>
+
+                                <!-- single comment -->
+                                <div class="et-event-details-comment flex xxs:flex-col items-start gap-x-[20px] pb-[40px] xxs:pb-[25px] border-b border-[#ECECEC]">
+                                    <div class="user-img rounded-full overflow-hidden w-[96px] h-[96px] shrink-0">
+                                        <img src="assets/img/speaker-3.jpg" alt="user" class="object-cover w-full h-full">
+                                    </div>
+
+                                    <div class="pt-[17px]">
+                                        <div class="user-info mb-[19px]">
+                                            <h5 class="user-name font-medium text-[20px] text-etBlack mb-[9px]">Esther Howard</h5>
+                                            <h6 class="font-normal text-[16px] text-etGray">February 10, 2024 at 2:37 pm</h6>
+                                        </div>
+                                        <div class="comment">
+                                            <p class="text-[16px] text-etGray2">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.
+                                            </p>
+                                        </div>
+
+                                        <button class="h-[30px] px-[16px] bg-etBlue text-[14px] text-white rounded-[6px] mt-[22px] hover:bg-etBlack">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- comment form -->
+                        <div class="!mt-[60px] xxs:!mt-[30px]">
+                            <h5 class="font-medium text-[24px] text-etBlack mb-[32px] xxs:mb-[20px]">Leave a Comment</h5>
+
+                            <form action="#" class="grid grid-cols-2 xxs:grid-cols-1 gap-[30px]">
+                                <div>
+                                    <label for="et-comment-form-name" class="block mb-[11px] font-medium text-[16px] text-etBlack">Your Name*</label>
+                                    <input type="text" name="name" id="et-comment-form-name" placeholder="Your Name" class="h-[60px] xxs:h-[50px] text-[16px] px-[20px] xxs:px-[15px] rounded-[4px] border border-[#E5E5E5] w-full focus:outline-none">
+                                </div>
+
+                                <div>
+                                    <label for="et-comment-form-email" class="block mb-[11px] font-medium text-[16px] text-etBlack">Your Email*</label>
+                                    <input type="email" name="email" id="et-comment-form-email" placeholder="Your Email" class="text-[16px] h-[60px] xxs:h-[50px] px-[20px] xxs:px-[15px] rounded-[4px] border border-[#E5E5E5] w-full focus:outline-none">
+                                </div>
+
+                                <div class="col-span-2 xxs:col-span-1">
+                                    <label for="et-comment-form-message" class="block mb-[11px] font-medium text-[16px] text-etBlack">Your Review*</label>
+                                    <textarea name="message" id="et-comment-form-message" placeholder="Write Message" class="h-[200px] text-[16px] py-[18px] px-[20px] xxs:px-[15px] rounded-[4px] border border-[#E5E5E5] w-full focus:outline-none"></textarea>
+                                </div>
+
+                                <div>
+                                    <button type="submit" class="bg-etBlue h-[55px] px-[24px] rounded-[8px] text-white text-[16px] hover:bg-etBlack">Post Comment <span class="pl-[5px]"><i class="fa-solid fa-arrow-right-long"></i></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- right sidebar -->
+                    <div class="right max-w-full w-[370px] lg:w-[360px] shrink-0 space-y-[30px] md:space-y-[25px]">
+                        <!-- search widget -->
+                        <div class="border border-[#e5e5e5] rounded-[10px] px-[30px] xxs:px-[20px] pt-[30px] xxs:pt-[20px] pb-[40px] xxs:pb-[30px]">
+                            <h4 class="font-medium text-[24px] xxs:text-[20px] text-etBlack relative mb-[5px] before:content-normal before:absolute before:left-0 before:-bottom-[5px] before:w-[50px] before:h-[2px] before:bg-etBlue">Search</h4>
+
+                            <!-- search form -->
+                            <form action="#" class="border border-[#e5e5e5] rounded-[8px] flex h-[60px] px-[20px] mt-[30px]">
+                                <input type="search" name="search" id="et-news-search" class="w-full bg-transparent text-[16px] focus:outline-none" placeholder="Search here..">
+                                <button type="submit" class="text-[16px] hover:text-etBlue"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+
+                        <!-- Categories widget -->
+                        <div class="border border-[#e5e5e5] rounded-[10px] px-[30px] xxs:px-[20px] pt-[30px] xxs:pt-[20px] pb-[40px] xxs:pb-[30px]">
+                            <h4 class="font-medium text-[24px] xxs:text-[20px] text-etBlack relative mb-[5px] before:content-normal before:absolute before:left-0 before:-bottom-[5px] before:w-[50px] before:h-[2px] before:bg-etBlue">Categories</h4>
+
+                            <ul class="mt-[30px] text-[16px]">
+                                <li class="text-etBlack py-[16px] border-b border-t border-[#D9D9D9]">
+                                    <a href="#" class="flex items-center justify-between hover:text-etBlue">
+                                        <span>Art & Design</span>
+                                        <span>(2)</span>
+                                    </a>
+                                </li>
+                                <li class="text-etBlack py-[16px] border-b border-[#D9D9D9]">
+                                    <a href="#" class="flex items-center justify-between hover:text-etBlue">
+                                        <span>Development</span>
+                                        <span>(4)</span>
+                                    </a>
+                                </li>
+                                <li class="text-etBlack py-[16px] border-b border-[#D9D9D9]">
+                                    <a href="#" class="flex items-center justify-between hover:text-etBlue">
+                                        <span>Data Science</span>
+                                        <span>(3)</span>
+                                    </a>
+                                </li>
+                                <li class="text-etBlack py-[16px] border-b border-[#D9D9D9]">
+                                    <a href="#" class="flex items-center justify-between hover:text-etBlue">
+                                        <span>Marketing</span>
+                                        <span>(2)</span>
+                                    </a>
+                                </li>
+                                <li class="text-etBlack py-[16px] border-b border-[#D9D9D9]">
+                                    <a href="#" class="flex items-center justify-between hover:text-etBlue">
+                                        <span>Finance</span>
+                                        <span>(5)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Recent Post widget -->
+                        <div class="border border-[#e5e5e5] rounded-[10px] px-[30px] xxs:px-[20px] pt-[30px] xxs:pt-[20px] pb-[40px] xxs:pb-[30px]">
+                            <h4 class="font-medium text-[24px] xxs:text-[20px] text-etBlack relative mb-[5px] before:content-normal before:absolute before:left-0 before:-bottom-[5px] before:w-[50px] before:h-[2px] before:bg-etBlue">Recent Post</h4>
+
+                            <div class="posts mt-[30px] space-y-[24px]">
+                                <!-- single post -->
+                                <div class="flex items-center gap-[16px]">
+                                    <div class="rounded-[6px] w-[78px] h-[79px] overflow-hidden shrink-0">
+                                        <img src="assets/img/blog-1.jpg" alt="Post Image">
+                                    </div>
+
+                                    <div>
+                                        <span class="date text-[14px] text-etGray flex items-center gap-[12px] mb-[3px]">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.6756 4.42875C15.5769 2.78656 14.2056 1.5 12.5541 1.5H11.75V0.875C11.75 0.70924 11.6842 0.550268 11.5669 0.433058C11.4497 0.315848 11.2908 0.25 11.125 0.25C10.9592 0.25 10.8003 0.315848 10.6831 0.433058C10.5659 0.550268 10.5 0.70924 10.5 0.875V1.5H5.50001V0.875C5.50001 0.70924 5.43416 0.550268 5.31695 0.433058C5.19974 0.315848 5.04077 0.25 4.87501 0.25C4.70924 0.25 4.55027 0.315848 4.43306 0.433058C4.31585 0.550268 4.25001 0.70924 4.25001 0.875V1.5H3.44594C1.79407 1.5 0.422818 2.78656 0.32438 4.42875C0.139068 7.5175 0.142505 10.6506 0.334693 13.7409C0.432193 15.3103 1.68938 16.5675 3.25875 16.665C4.83157 16.7628 6.41563 16.8116 7.99969 16.8116C9.58344 16.8116 11.1678 16.7628 12.7406 16.665C14.31 16.5675 15.5672 15.3103 15.6647 13.7409C15.8572 10.6522 15.8606 7.51937 15.6756 4.42875ZM14.4175 13.6634C14.3885 14.1191 14.1944 14.5487 13.8716 14.8716C13.5487 15.1944 13.1192 15.3885 12.6634 15.4175C9.56907 15.6097 6.43094 15.6097 3.33657 15.4175C2.88086 15.3885 2.45134 15.1944 2.12845 14.8716C1.80557 14.5487 1.61147 14.1191 1.58251 13.6634C1.43601 11.2785 1.40296 8.88803 1.48344 6.5H14.5169C14.5956 8.8875 14.5653 11.2884 14.4175 13.6634ZM4.87501 4C5.04077 4 5.19974 3.93415 5.31695 3.81694C5.43416 3.69973 5.50001 3.54076 5.50001 3.375V2.75H10.5V3.375C10.5 3.54076 10.5659 3.69973 10.6831 3.81694C10.8003 3.93415 10.9592 4 11.125 4C11.2908 4 11.4497 3.93415 11.5669 3.81694C11.6842 3.69973 11.75 3.54076 11.75 3.375V2.75H12.5541C13.5456 2.75 14.3688 3.52031 14.4278 4.50344C14.4425 4.75156 14.4488 5.00125 14.4609 5.25H1.53907C1.55157 5.00125 1.55751 4.75156 1.57219 4.50344C1.63126 3.52031 2.45407 2.75 3.44594 2.75H4.25001V3.375C4.25001 3.54076 4.31585 3.69973 4.43306 3.81694C4.55027 3.93415 4.70924 4 4.87501 4Z" class="fill-etBlue" />
+                                                    <path d="M4.875 10.25C5.39277 10.25 5.8125 9.83027 5.8125 9.3125C5.8125 8.79473 5.39277 8.375 4.875 8.375C4.35723 8.375 3.9375 8.79473 3.9375 9.3125C3.9375 9.83027 4.35723 10.25 4.875 10.25Z" class="fill-etBlue" />
+                                                    <path d="M8 10.25C8.51777 10.25 8.9375 9.83027 8.9375 9.3125C8.9375 8.79473 8.51777 8.375 8 8.375C7.48223 8.375 7.0625 8.79473 7.0625 9.3125C7.0625 9.83027 7.48223 10.25 8 10.25Z" class="fill-etBlue" />
+                                                    <path d="M4.875 13.375C5.39277 13.375 5.8125 12.9553 5.8125 12.4375C5.8125 11.9197 5.39277 11.5 4.875 11.5C4.35723 11.5 3.9375 11.9197 3.9375 12.4375C3.9375 12.9553 4.35723 13.375 4.875 13.375Z" class="fill-etBlue" />
+                                                    <path d="M11.125 10.25C11.6428 10.25 12.0625 9.83027 12.0625 9.3125C12.0625 8.79473 11.6428 8.375 11.125 8.375C10.6072 8.375 10.1875 8.79473 10.1875 9.3125C10.1875 9.83027 10.6072 10.25 11.125 10.25Z" class="fill-etBlue" />
+                                                    <path d="M11.125 13.375C11.6428 13.375 12.0625 12.9553 12.0625 12.4375C12.0625 11.9197 11.6428 11.5 11.125 11.5C10.6072 11.5 10.1875 11.9197 10.1875 12.4375C10.1875 12.9553 10.6072 13.375 11.125 13.375Z" class="fill-etBlue" />
+                                                    <path d="M8 13.375C8.51777 13.375 8.9375 12.9553 8.9375 12.4375C8.9375 11.9197 8.51777 11.5 8 11.5C7.48223 11.5 7.0625 11.9197 7.0625 12.4375C7.0625 12.9553 7.48223 13.375 8 13.375Z" class="fill-etBlue" />
+                                                </svg>
+                                            </span>
+                                            <span>18 Dec, 2024</span>
+                                        </span>
+
+                                        <h6 class="font-medium text-[15px] text-etBlack"><a href="news-details.html" class="hover:text-etBlue">Keep Your Business Safe & Endure High Availability</a></h6>
+                                    </div>
+                                </div>
+
+                                <!-- single post -->
+                                <div class="flex items-center gap-[16px]">
+                                    <div class="rounded-[6px] w-[78px] h-[79px] overflow-hidden shrink-0">
+                                        <img src="assets/img/blog-2.jpg" alt="Post Image">
+                                    </div>
+
+                                    <div>
+                                        <span class="date text-[14px] text-etGray flex items-center gap-[12px] mb-[3px]">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.6756 4.42875C15.5769 2.78656 14.2056 1.5 12.5541 1.5H11.75V0.875C11.75 0.70924 11.6842 0.550268 11.5669 0.433058C11.4497 0.315848 11.2908 0.25 11.125 0.25C10.9592 0.25 10.8003 0.315848 10.6831 0.433058C10.5659 0.550268 10.5 0.70924 10.5 0.875V1.5H5.50001V0.875C5.50001 0.70924 5.43416 0.550268 5.31695 0.433058C5.19974 0.315848 5.04077 0.25 4.87501 0.25C4.70924 0.25 4.55027 0.315848 4.43306 0.433058C4.31585 0.550268 4.25001 0.70924 4.25001 0.875V1.5H3.44594C1.79407 1.5 0.422818 2.78656 0.32438 4.42875C0.139068 7.5175 0.142505 10.6506 0.334693 13.7409C0.432193 15.3103 1.68938 16.5675 3.25875 16.665C4.83157 16.7628 6.41563 16.8116 7.99969 16.8116C9.58344 16.8116 11.1678 16.7628 12.7406 16.665C14.31 16.5675 15.5672 15.3103 15.6647 13.7409C15.8572 10.6522 15.8606 7.51937 15.6756 4.42875ZM14.4175 13.6634C14.3885 14.1191 14.1944 14.5487 13.8716 14.8716C13.5487 15.1944 13.1192 15.3885 12.6634 15.4175C9.56907 15.6097 6.43094 15.6097 3.33657 15.4175C2.88086 15.3885 2.45134 15.1944 2.12845 14.8716C1.80557 14.5487 1.61147 14.1191 1.58251 13.6634C1.43601 11.2785 1.40296 8.88803 1.48344 6.5H14.5169C14.5956 8.8875 14.5653 11.2884 14.4175 13.6634ZM4.87501 4C5.04077 4 5.19974 3.93415 5.31695 3.81694C5.43416 3.69973 5.50001 3.54076 5.50001 3.375V2.75H10.5V3.375C10.5 3.54076 10.5659 3.69973 10.6831 3.81694C10.8003 3.93415 10.9592 4 11.125 4C11.2908 4 11.4497 3.93415 11.5669 3.81694C11.6842 3.69973 11.75 3.54076 11.75 3.375V2.75H12.5541C13.5456 2.75 14.3688 3.52031 14.4278 4.50344C14.4425 4.75156 14.4488 5.00125 14.4609 5.25H1.53907C1.55157 5.00125 1.55751 4.75156 1.57219 4.50344C1.63126 3.52031 2.45407 2.75 3.44594 2.75H4.25001V3.375C4.25001 3.54076 4.31585 3.69973 4.43306 3.81694C4.55027 3.93415 4.70924 4 4.87501 4Z" class="fill-etBlue" />
+                                                    <path d="M4.875 10.25C5.39277 10.25 5.8125 9.83027 5.8125 9.3125C5.8125 8.79473 5.39277 8.375 4.875 8.375C4.35723 8.375 3.9375 8.79473 3.9375 9.3125C3.9375 9.83027 4.35723 10.25 4.875 10.25Z" class="fill-etBlue" />
+                                                    <path d="M8 10.25C8.51777 10.25 8.9375 9.83027 8.9375 9.3125C8.9375 8.79473 8.51777 8.375 8 8.375C7.48223 8.375 7.0625 8.79473 7.0625 9.3125C7.0625 9.83027 7.48223 10.25 8 10.25Z" class="fill-etBlue" />
+                                                    <path d="M4.875 13.375C5.39277 13.375 5.8125 12.9553 5.8125 12.4375C5.8125 11.9197 5.39277 11.5 4.875 11.5C4.35723 11.5 3.9375 11.9197 3.9375 12.4375C3.9375 12.9553 4.35723 13.375 4.875 13.375Z" class="fill-etBlue" />
+                                                    <path d="M11.125 10.25C11.6428 10.25 12.0625 9.83027 12.0625 9.3125C12.0625 8.79473 11.6428 8.375 11.125 8.375C10.6072 8.375 10.1875 8.79473 10.1875 9.3125C10.1875 9.83027 10.6072 10.25 11.125 10.25Z" class="fill-etBlue" />
+                                                    <path d="M11.125 13.375C11.6428 13.375 12.0625 12.9553 12.0625 12.4375C12.0625 11.9197 11.6428 11.5 11.125 11.5C10.6072 11.5 10.1875 11.9197 10.1875 12.4375C10.1875 12.9553 10.6072 13.375 11.125 13.375Z" class="fill-etBlue" />
+                                                    <path d="M8 13.375C8.51777 13.375 8.9375 12.9553 8.9375 12.4375C8.9375 11.9197 8.51777 11.5 8 11.5C7.48223 11.5 7.0625 11.9197 7.0625 12.4375C7.0625 12.9553 7.48223 13.375 8 13.375Z" class="fill-etBlue" />
+                                                </svg>
+                                            </span>
+                                            <span>18 Dec, 2024</span>
+                                        </span>
+
+                                        <h6 class="font-medium text-[15px] text-etBlack"><a href="news-details.html" class="hover:text-etBlue">Make Your Own Expanding Contracting</a></h6>
+                                    </div>
+                                </div>
+
+                                <!-- single post -->
+                                <div class="flex items-center gap-[16px]">
+                                    <div class="rounded-[6px] w-[78px] h-[79px] overflow-hidden shrink-0">
+                                        <img src="assets/img/blog-3.jpg" alt="Post Image">
+                                    </div>
+
+                                    <div>
+                                        <span class="date text-[14px] text-etGray flex items-center gap-[12px] mb-[3px]">
+                                            <span class="icon">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.6756 4.42875C15.5769 2.78656 14.2056 1.5 12.5541 1.5H11.75V0.875C11.75 0.70924 11.6842 0.550268 11.5669 0.433058C11.4497 0.315848 11.2908 0.25 11.125 0.25C10.9592 0.25 10.8003 0.315848 10.6831 0.433058C10.5659 0.550268 10.5 0.70924 10.5 0.875V1.5H5.50001V0.875C5.50001 0.70924 5.43416 0.550268 5.31695 0.433058C5.19974 0.315848 5.04077 0.25 4.87501 0.25C4.70924 0.25 4.55027 0.315848 4.43306 0.433058C4.31585 0.550268 4.25001 0.70924 4.25001 0.875V1.5H3.44594C1.79407 1.5 0.422818 2.78656 0.32438 4.42875C0.139068 7.5175 0.142505 10.6506 0.334693 13.7409C0.432193 15.3103 1.68938 16.5675 3.25875 16.665C4.83157 16.7628 6.41563 16.8116 7.99969 16.8116C9.58344 16.8116 11.1678 16.7628 12.7406 16.665C14.31 16.5675 15.5672 15.3103 15.6647 13.7409C15.8572 10.6522 15.8606 7.51937 15.6756 4.42875ZM14.4175 13.6634C14.3885 14.1191 14.1944 14.5487 13.8716 14.8716C13.5487 15.1944 13.1192 15.3885 12.6634 15.4175C9.56907 15.6097 6.43094 15.6097 3.33657 15.4175C2.88086 15.3885 2.45134 15.1944 2.12845 14.8716C1.80557 14.5487 1.61147 14.1191 1.58251 13.6634C1.43601 11.2785 1.40296 8.88803 1.48344 6.5H14.5169C14.5956 8.8875 14.5653 11.2884 14.4175 13.6634ZM4.87501 4C5.04077 4 5.19974 3.93415 5.31695 3.81694C5.43416 3.69973 5.50001 3.54076 5.50001 3.375V2.75H10.5V3.375C10.5 3.54076 10.5659 3.69973 10.6831 3.81694C10.8003 3.93415 10.9592 4 11.125 4C11.2908 4 11.4497 3.93415 11.5669 3.81694C11.6842 3.69973 11.75 3.54076 11.75 3.375V2.75H12.5541C13.5456 2.75 14.3688 3.52031 14.4278 4.50344C14.4425 4.75156 14.4488 5.00125 14.4609 5.25H1.53907C1.55157 5.00125 1.55751 4.75156 1.57219 4.50344C1.63126 3.52031 2.45407 2.75 3.44594 2.75H4.25001V3.375C4.25001 3.54076 4.31585 3.69973 4.43306 3.81694C4.55027 3.93415 4.70924 4 4.87501 4Z" class="fill-etBlue" />
+                                                    <path d="M4.875 10.25C5.39277 10.25 5.8125 9.83027 5.8125 9.3125C5.8125 8.79473 5.39277 8.375 4.875 8.375C4.35723 8.375 3.9375 8.79473 3.9375 9.3125C3.9375 9.83027 4.35723 10.25 4.875 10.25Z" class="fill-etBlue" />
+                                                    <path d="M8 10.25C8.51777 10.25 8.9375 9.83027 8.9375 9.3125C8.9375 8.79473 8.51777 8.375 8 8.375C7.48223 8.375 7.0625 8.79473 7.0625 9.3125C7.0625 9.83027 7.48223 10.25 8 10.25Z" class="fill-etBlue" />
+                                                    <path d="M4.875 13.375C5.39277 13.375 5.8125 12.9553 5.8125 12.4375C5.8125 11.9197 5.39277 11.5 4.875 11.5C4.35723 11.5 3.9375 11.9197 3.9375 12.4375C3.9375 12.9553 4.35723 13.375 4.875 13.375Z" class="fill-etBlue" />
+                                                    <path d="M11.125 10.25C11.6428 10.25 12.0625 9.83027 12.0625 9.3125C12.0625 8.79473 11.6428 8.375 11.125 8.375C10.6072 8.375 10.1875 8.79473 10.1875 9.3125C10.1875 9.83027 10.6072 10.25 11.125 10.25Z" class="fill-etBlue" />
+                                                    <path d="M11.125 13.375C11.6428 13.375 12.0625 12.9553 12.0625 12.4375C12.0625 11.9197 11.6428 11.5 11.125 11.5C10.6072 11.5 10.1875 11.9197 10.1875 12.4375C10.1875 12.9553 10.6072 13.375 11.125 13.375Z" class="fill-etBlue" />
+                                                    <path d="M8 13.375C8.51777 13.375 8.9375 12.9553 8.9375 12.4375C8.9375 11.9197 8.51777 11.5 8 11.5C7.48223 11.5 7.0625 11.9197 7.0625 12.4375C7.0625 12.9553 7.48223 13.375 8 13.375Z" class="fill-etBlue" />
+                                                </svg>
+                                            </span>
+                                            <span>18 Dec, 2024</span>
+                                        </span>
+
+                                        <h6 class="font-medium text-[15px] text-etBlack"><a href="news-details.html" class="hover:text-etBlue">Keep Your Business Safe & Endure High Availability</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tags widget -->
+                        <div class="border border-[#e5e5e5] rounded-[10px] px-[30px] xxs:px-[20px] pt-[30px] xxs:pt-[20px] pb-[40px] xxs:pb-[30px]">
+                            <h4 class="font-medium text-[24px] xxs:text-[20px] text-etBlack relative mb-[5px] before:content-normal before:absolute before:left-0 before:-bottom-[5px] before:w-[50px] before:h-[2px] before:bg-etBlue">Tags</h4>
+
+                            <div class="flex flex-wrap gap-[10px] mt-[30px]">
+                                <a href="#" class="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">Speaker</a>
+                                <a href="#" class="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">Business</a>
+                                <a href="#" class="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">Venue</a>
+                                <a href="#" class="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">Tech</a>
+                                <a href="#" class="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">Personal</a>
+                                <a href="#" class="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">Digital</a>
+                                <a href="#" class="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">Technology</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MAIN CONTENT END -->
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="et-footer bg-etBlack relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-[url('../assets/img/footer-1-bg.jpg')] before:opacity-30 before:mix-blend-overlay text-white">
+        <div class="container mx-auto max-w-[calc(100%-37.1vw)] xxxl:max-w-[calc(100%-350px)] xl:max-w-[calc(100%-170px)] px-[12px] lg:max-w-full">
+
+            <!-- footer top -->
+            <div class="et-footer-top pt-[130px] xl:pt-[80px] pb-[60px]">
+                <!-- contact infos -->
+                <div class="bg-etBlue py-[35px] px-[40px] xl:px-[30px] rounded-[20px] mb-[60px] overflow-hidden relative z-[1] flex lg:flex-wrap justify-between lg:justify-center xs:justify-start items-center gap-[20px] before:absolute before:-z-[1] before:inset-0 before:bg-[url('../assets/img/contact-info-bg.jpg')] before:bg-cover before:bg-no-repeat before:bg-center before:opacity-40 before:mix-blend-multiply">
+                    <!-- single info -->
+                    <div class="flex xxs:flex-col items-center xxs:items-start gap-[15px] xxs:gap-[10px]">
+                        <!-- icon -->
+                        <div class="icon border border-white/15 rounded-full w-[63px] aspect-square shrink-0 flex items-center justify-center">
+                            <div class="w-[40px] aspect-square bg-white rounded-full flex items-center justify-center">
+                                <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0C4.40935 0.00211004 2.88445 0.634929 1.75969 1.75969C0.634929 2.88445 0.00211004 4.40935 0 6C0 10.3075 5.59 15.7025 5.8275 15.93C5.8737 15.9749 5.93558 16 6 16C6.06442 16 6.1263 15.9749 6.1725 15.93C6.41 15.7025 12 10.3075 12 6C11.9979 4.40935 11.3651 2.88445 10.2403 1.75969C9.11555 0.634929 7.59065 0.00211004 6 0ZM6 8.75C5.4561 8.75 4.92442 8.58871 4.47218 8.28654C4.01995 7.98437 3.66747 7.55488 3.45933 7.05238C3.25119 6.54988 3.19673 5.99695 3.30284 5.4635C3.40895 4.93005 3.67086 4.44005 4.05546 4.05546C4.44005 3.67086 4.93005 3.40895 5.4635 3.30284C5.99695 3.19673 6.54988 3.25119 7.05238 3.45933C7.55488 3.66747 7.98437 4.01995 8.28654 4.47218C8.58871 4.92442 8.75 5.4561 8.75 6C8.74956 6.72921 8.45969 7.42843 7.94406 7.94406C7.42843 8.45969 6.72921 8.74956 6 8.75Z" class="fill-etBlue" />
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- txt -->
+                        <div>
+                            <span class="block font-medium text-[14px]">Event Venue</span>
+                            <h5 class="font-medium text-[20px]">4648 Rocky Road Philadelphia PA, 1920</h5>
+                        </div>
+                    </div>
+
+                    <!-- single info -->
+                    <div class="flex xxs:flex-col items-center xxs:items-start gap-[15px] xxs:gap-[10px]">
+                        <!-- icon -->
+                        <div class="icon border border-white/15 rounded-full w-[63px] aspect-square shrink-0 flex items-center justify-center">
+                            <div class="w-[40px] aspect-square bg-white rounded-full flex items-center justify-center">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8591 3.17969L11.0066 8.00091L15.8591 12.8221C15.9468 12.6388 16 12.4361 16 12.2197V3.78216C16 3.56569 15.9468 3.36303 15.8591 3.17969Z" fill="#1260FE" />
+                                    <path d="M14.5937 2.375H1.40618C1.18971 2.375 0.987055 2.42822 0.803711 2.51594L7.00568 8.68666C7.55406 9.23503 8.4458 9.23503 8.99418 8.68666L15.1961 2.51594C15.0128 2.42822 14.8101 2.375 14.5937 2.375Z" fill="#1260FE" />
+                                    <path d="M0.140938 3.17969C0.0532188 3.36303 0 3.56569 0 3.78216V12.2197C0 12.4361 0.0532188 12.6388 0.140938 12.8221L4.99341 8.00091L0.140938 3.17969Z" fill="#1260FE" />
+                                    <path d="M10.3437 8.66211L9.65702 9.34877C8.7433 10.2625 7.25652 10.2625 6.3428 9.34877L5.65618 8.66211L0.803711 13.4833C0.987055 13.571 1.18971 13.6243 1.40618 13.6243H14.5937C14.8101 13.6243 15.0128 13.571 15.1961 13.4833L10.3437 8.66211Z" fill="#1260FE" />
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- txt -->
+                        <div>
+                            <span class="block font-medium text-[14px]">Send Email</span>
+                            <h5 class="font-medium text-[20px]"><a href="mailto:info@eventek.com">info@eventek.com</a></h5>
+                        </div>
+                    </div>
+
+                    <!-- single info -->
+                    <div class="flex xxs:flex-col items-center xxs:items-start gap-[15px] xxs:gap-[10px]">
+                        <!-- icon -->
+                        <div class="icon border border-white/15 rounded-full w-[63px] aspect-square shrink-0 flex items-center justify-center">
+                            <div class="w-[40px] aspect-square bg-white rounded-full flex items-center justify-center">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.1643 10.5834C11.6416 10.0673 10.989 10.0673 10.4696 10.5834C10.0734 10.9762 9.67723 11.3691 9.28769 11.7686C9.18114 11.8785 9.09125 11.9018 8.9614 11.8286C8.70503 11.6887 8.43202 11.5755 8.18564 11.4224C7.03698 10.6999 6.07477 9.77097 5.22243 8.72552C4.79959 8.20613 4.42336 7.65011 4.16033 7.02417C4.10706 6.89765 4.11705 6.81442 4.22026 6.7112C4.61647 6.32832 5.00268 5.93544 5.39223 5.54257C5.93493 4.99654 5.93493 4.35728 5.3889 3.80792C5.07926 3.49495 4.76962 3.18865 4.45998 2.87568C4.14036 2.55605 3.82406 2.23309 3.5011 1.9168C2.97838 1.40739 2.32581 1.40739 1.80641 1.92012C1.40688 2.313 1.02399 2.71586 0.617799 3.10208C0.241571 3.45833 0.0517928 3.89449 0.0118394 4.40389C-0.0514202 5.23293 0.151676 6.01535 0.438009 6.77779C1.02399 8.35595 1.91628 9.75765 2.99836 11.0428C4.45998 12.7808 6.20462 14.1559 8.24557 15.148C9.1645 15.5942 10.1167 15.9371 11.1522 15.9937C11.8647 16.0337 12.484 15.8539 12.98 15.2979C13.3196 14.9183 13.7025 14.572 14.0621 14.2091C14.5948 13.6698 14.5982 13.0172 14.0688 12.4845C13.4362 11.8485 12.8003 11.2159 12.1643 10.5834Z" fill="#1260FE" />
+                                    <path d="M11.5283 7.92979L12.7569 7.72003C12.5638 6.59135 12.0311 5.56921 11.222 4.75682C10.3663 3.90116 9.28426 3.36178 8.09232 3.19531L7.91919 4.43054C8.84145 4.56039 9.68047 4.97657 10.343 5.63913C10.969 6.26506 11.3785 7.05747 11.5283 7.92979Z" fill="#1260FE" />
+                                    <path d="M13.4496 2.59031C12.0312 1.17197 10.2367 0.276344 8.25565 0L8.08252 1.23523C9.79386 1.47495 11.3454 2.25071 12.5706 3.47262C13.7326 4.63459 14.495 6.10288 14.7714 7.71766L15.9999 7.50791C15.677 5.63676 14.7947 3.93874 13.4496 2.59031Z" fill="#1260FE" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- txt -->
+                        <div>
+                            <span class="block font-medium text-[14px]">Call Emergency</span>
+                            <h5 class="font-medium text-[20px]"><a href="tel:88012365499">+88 0123 654 99</a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex md:flex-wrap xs:w-full gap-x-[65px] xxl:gap-x-[45px] xl:gap-[30px] gap-y-[25px] justify-between md:justify-center xxs:justify-start">
+                    <!-- footer about -->
+                    <div class="et-footer-about max-w-[295px] lg:max-w-none md:max-w-[300px] xs:max-w-full">
+                        <a href="#" class="mb-[25px] inline-block"><img src="assets/img/logo-white.png" alt="logo"></a>
+                        <p class="font-light text-[#f2f2f2] text-[16px] mb-[25px]">Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus sit amet magna elemen facilisis</p>
+
+                        <!-- social media -->
+                        <div class="et-socials flex gap-[10px] text-[14px] *:border *:border-[#9EAACB] *:text-[#9EAACB] *:w-[40px] *:aspect-square *:shrink-0 *:inline-flex *:items-center *:justify-center *:rounded-full ">
+                            <a href="#" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="hover:text-white hover:bg-etBlue hover:border-etBlue"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- widget -->
+                    <div class="et-footer-widget shrink-0 xs:grow">
+                        <h5 class="text-[20px] font-medium mb-[16px]">Find <span class="text-etBlue">Events</span></h5>
+
+                        <ul class="space-y-[17px] text-[16px] font-light text-[#f2f2f2]">
+                            <li>
+                                <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                                    <span class="icon">
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        </svg>
+                                    </span>
+                                    <span class="txt">Outdoor Concerts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                                    <span class="icon">
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        </svg>
+                                    </span>
+                                    <span class="txt">Indoor Concerts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                                    <span class="icon">
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        </svg>
+                                    </span>
+                                    <span class="txt">Festivals</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                                    <span class="icon">
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        </svg>
+                                    </span>
+                                    <span class="txt">Concerts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                                    <span class="icon">
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        </svg>
+                                    </span>
+                                    <span class="txt">Event Calendar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- widget -->
+                    <div class="et-footer-widget shrink-0 xs:grow">
+                        <h5 class="text-[20px] font-semibold mb-[16px]">Useful <span class="text-etBlue">Links</span></h5>
+
+                        <ul class="space-y-[17px] text-[16px] font-light text-[#f2f2f2]">
+                            <li>
+                                <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                                    <span class="icon">
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        </svg>
+                                    </span>
+                                    <span class="txt">Log In</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                                    <span class="icon">
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        </svg>
+                                    </span>
+                                    <span class="txt">Register</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                                    <span class="icon">
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        </svg>
+                                    </span>
+                                    <span class="txt">About Eventek</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center gap-[10px] hover:text-etBlue group">
+                                    <span class="icon">
+                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 15.875V2.28125C0 1.51953 0.615234 0.875 1.40625 0.875H9.84375C10.6055 0.875 11.25 1.51953 11.25 2.28125V15.875L5.625 12.5938L0 15.875Z" class="fill-transparent stroke-white group-hover:stroke-etBlue group-hover:fill-etBlue transition" />
+                                        </svg>
+                                    </span>
+                                    <span class="txt">How It Works</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- widget -->
+                    <div class="et-footer-widget shrink-0 max-w-[318px] xs:max-w-full xs:grow">
+                        <h5 class="text-[20px] font-semibold mb-[16px]">Upcoming <span class="text-etBlue">Events</span></h5>
+
+                        <div class="space-y-[30px]">
+                            <!-- single upcoming events -->
+                            <div class="flex items-center gap-x-[30px] xxs:gap-x-[15px]">
+                                <div class="rounded-[15px] overflow-hidden shrink-0">
+                                    <img src="assets/img/cta-bg-2.jpg" alt="Event Image" class="w-[80px] aspect-square">
+                                </div>
+
+                                <div>
+                                    <span class="date text-[16px] text-etGray flex items-center gap-[12px] mb-[8px]">
+                                        <span class="icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2043_1443)">
+                                                    <path d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z" fill="var(--et-blue)"></path>
+                                                    <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z" fill="var(--et-blue)"></path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <span>24, jan - 2024</span>
+                                    </span>
+
+                                    <h6 class="font-medium text-[20px] text-white"><a href="news-details.html" class="hover:text-etBlue">Web Developer Meetup</a></h6>
+                                </div>
+                            </div>
+
+                            <!-- single upcoming events -->
+                            <div class="flex items-center gap-x-[30px] xxs:gap-x-[15px]">
+                                <div class="rounded-[15px] overflow-hidden shrink-0">
+                                    <img src="assets/img/evenet-sched-2.jpg" alt="Event Image" class="w-[80px] aspect-square">
+                                </div>
+
+                                <div>
+                                    <span class="date text-[16px] text-etGray flex items-center gap-[12px] mb-[8px]">
+                                        <span class="icon">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2043_1443)">
+                                                    <path d="M14.125 1.75H13.375V0.5H12.125V1.75H3.875V0.5H2.625V1.75H1.875C0.841125 1.75 0 2.59113 0 3.625V14.625C0 15.6589 0.841125 16.5 1.875 16.5H14.125C15.1589 16.5 16 15.6589 16 14.625V3.625C16 2.59113 15.1589 1.75 14.125 1.75ZM14.75 14.625C14.75 14.9696 14.4696 15.25 14.125 15.25H1.875C1.53038 15.25 1.25 14.9696 1.25 14.625V6.375H14.75V14.625ZM14.75 5.125H1.25V3.625C1.25 3.28038 1.53038 3 1.875 3H2.625V4.25H3.875V3H12.125V4.25H13.375V3H14.125C14.4696 3 14.75 3.28038 14.75 3.625V5.125Z" fill="var(--et-blue)"></path>
+                                                    <path d="M3.625 7.6875H2.375V8.9375H3.625V7.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M6.125 7.6875H4.875V8.9375H6.125V7.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M8.625 7.6875H7.375V8.9375H8.625V7.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M11.125 7.6875H9.875V8.9375H11.125V7.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M13.625 7.6875H12.375V8.9375H13.625V7.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M3.625 10.1875H2.375V11.4375H3.625V10.1875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M6.125 10.1875H4.875V11.4375H6.125V10.1875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M8.625 10.1875H7.375V11.4375H8.625V10.1875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M11.125 10.1875H9.875V11.4375H11.125V10.1875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M3.625 12.6875H2.375V13.9375H3.625V12.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M6.125 12.6875H4.875V13.9375H6.125V12.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M8.625 12.6875H7.375V13.9375H8.625V12.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M11.125 12.6875H9.875V13.9375H11.125V12.6875Z" fill="var(--et-blue)"></path>
+                                                    <path d="M13.625 10.1875H12.375V11.4375H13.625V10.1875Z" fill="var(--et-blue)"></path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <span>24, jan - 2024</span>
+                                    </span>
+
+                                    <h6 class="font-medium text-[20px] text-white"><a href="news-details.html" class="hover:text-etBlue">Web Developer Meetup</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer bottom -->
+            <div class="et-footer-bottom border-t border-white/20 py-[34px]">
+                <p class="font-light text-[#f2f2f2] text-center text-[16px]">&copy; 2024, Eventek All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+
+    <!-- JS FILES -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/lenis/lenis.min.js"></script>
+    <script src="assets/vendor/splittype/index.min.js"></script>
+    <script src="assets/vendor/gsap/gsap.min.js"></script>
+    <script src="assets/vendor/gsap/gsap-scroll-trigger.min.js"></script>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
