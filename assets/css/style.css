@@ -729,8 +729,35 @@ label {
     z-index: 1
 }
 
+#scroll-bottom {
+    position: absolute;
+    right: 50%;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: var(--color-white);
+    background-color: var(--theme-color);
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    box-shadow: var(--box-shadow2);
+    transition: var(--transition);
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    /* z-index: 1 */
+}
+
 #scroll-top i {
     transform: rotate(-35deg);
+    transition: var(--transition2)
+}
+
+#scroll-bottom i {
+    transform: rotate(135deg);
     transition: var(--transition2)
 }
 
@@ -738,7 +765,17 @@ label {
     transform: rotate(0)
 }
 
+#scroll-bottom:hover i {
+    transform: rotate(180deg)
+}
+
 #scroll-top.active {
+    opacity: 1;
+    visibility: visible;
+    bottom: 20px
+}
+
+#scroll-bottom.active {
     opacity: 1;
     visibility: visible;
     bottom: 20px
