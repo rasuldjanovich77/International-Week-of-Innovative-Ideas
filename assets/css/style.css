@@ -871,7 +871,7 @@ label {
 
 .navbar.fixed-top {
     position: fixed;
-    background: var(--color-white);
+    background: #0e1c41;
     box-shadow: var(--box-shadow2);
     animation: slide-down .7s
 }
@@ -1931,6 +1931,7 @@ label {
 }
 
 .about-area {
+    margin-top: 200px;
     position: relative;
     display: block
 }
@@ -6049,9 +6050,9 @@ h2 span.highlight {
     align-items: center;
 }
 .inner_slider_content {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: start;
-    width: 68.29%;
+    width: 80%;
     padding-top: 65px;
 }
 .inner_slider_content h1 {
@@ -6194,7 +6195,7 @@ h2 span.highlight {
 }
 .slider_vedio iframe {
     width: 100%;
-    height: 100%;
+    height: 950px;
     border: none;
     transform: scale(1.4);
 }
@@ -8675,4 +8676,8 @@ textarea::placeholder {
     display: none;
     cursor: pointer;
     z-index: 9999;
+}
+
+.mt-7 {
+    margin-top: 150px;
 }
