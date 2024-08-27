@@ -957,7 +957,7 @@ label {
         font-size: 17px;
         font-weight: 500;
         color: #ffffff;
-        text-transform: capitalize
+        text-transform: uppercase;
     }
 
     .navbar .nav-item:last-child .nav-link {
@@ -6960,6 +6960,16 @@ h2 span.highlight {
 .glowbal:hover .slick-prev ,.glowbal:hover .slick-next{
     opacity: 1;
     visibility: visible;
+}
+.glowbal::before {
+    content: "";
+    background-color: rgb(9 0 36 / 56%);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
 }
 .slick-prev{
     left: 20px;
