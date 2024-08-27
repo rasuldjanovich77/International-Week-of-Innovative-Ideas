@@ -2903,12 +2903,14 @@ label {
 
 .team-content .info h4 {
     font-size: 20px;
-    color: var(--color-dark)
+    color: var(--color-dark);
+    margin-bottom: 5px
 }
 
 .team-content .info span {
     color: var(--theme-color);
-    font-weight: 500
+    font-weight: 400;
+    line-height: 1.2 !important;
 }
 
 .team-area2 .team-item {
