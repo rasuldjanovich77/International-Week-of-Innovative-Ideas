@@ -696,13 +696,26 @@ label {
 }
 
 @media(min-width:1200px) {
-
-    .container,
     .container-sm,
     .container-md,
     .container-lg,
     .container-xl {
         max-width: 1200px
+    }
+}
+
+@media(min-width: 2400px) {
+    .pbx-120 {
+        padding-bottom: 120px;
+        padding-top: 120px
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .pbx-120 {
+        padding-bottom:0 ;
+        padding-top: 0
     }
 }
 
@@ -6146,7 +6159,7 @@ h2 span.highlight {
     display: inline-block;
     border-radius: 50px;
     padding: 16px 40px;
-    background-color: var(--bgcolor);
+    background-color: #0e1c41;
     color: var(--whitec);
     font-size: 14px;
     font-weight: 700;
@@ -6156,7 +6169,7 @@ h2 span.highlight {
     text-transform: uppercase;
 }
 .b_btn a:hover{
-    background-color: var(--brcolor);
+    background-color: #00c3ff;
     color: var(--whitec);
 }
 .b_btn a i {
@@ -6169,7 +6182,7 @@ h2 span.highlight {
     color: var(--whitec);
 }
 .b_btn a.active:hover{
-    background-color: var(--bgcolor);
+    background-color: #0e1c41;
     color: var(--whitec);
 }
 /* slider defult arrow css */
