@@ -1004,8 +1004,8 @@ label {
     .navbar .nav-item .nav-link {
         margin-right: 25px;
         padding: 25px 0;
-        font-size: 17px;
-        font-weight: 500;
+        font-size: 15px;
+        font-weight: 400;
         color: #ffffff;
         text-transform: uppercase;
     }
@@ -1152,10 +1152,10 @@ label {
 
     .nav-right .sidebar-btn .nav-right-link {
         background: #0e1c41;
-        width: 65px;
+        width: 105px;
         height: 61px;
         color: var(--color-white) !important;
-        font-size: 25px;
+        font-size: 17px;
         border: none
     }
 
@@ -5564,66 +5564,7 @@ h2 span.highlight {
     font-weight: 400;
 }
 
-/*======== main menu area start ==========*/
-.main_menu_area {
-    padding: 0 110px;
-    background-color: transparent;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-.main_menu_area.breadcam_menu {
-    background-color: var(--whitec);
-}
-/* mobile menu */
-.mobile_menu{
-    display: none;
-}
-.mobile_logo_area{
-    display: none;
-}
-.main_menu_area.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999999;
-    background: rgb(0 0 0 / 70%);
-}
-.main_menu_area .sticky_logo{
-    display: none;
-}
-.main_menu_area.sticky .main_logo{
-    display: none;
-}
-.main_menu_area.sticky .sticky_logo{
-    display: block;
-}
-.main_menu_area.sticky .inner_main_nav_area >ul >li >a{
-    color: var(--whitec);
-}
-.main_menu_area.sticky .main_nav_icon_right> i, .main_menu_area.sticky .main_nav_icons >i{
-    color: var(--whitec);
-}
-.main_menu_area.sticky .inner_main_nav_area >ul >li >a:hover{
-    color: var(--bgcolor);
-}
-.main_menu_area.sticky .inner_main_nav_area >ul >li >a i{
-    color: var(--whitec);
-}
-.main_menu_area.sticky .main_nav_btn a{
-    color: var(--whitec);
-}
-.main_menu_area.sticky .main_nav_icons a i{
-    color: var(--whitec);
-}
-/* main nav area css */
-.main_nav_area{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 /* absolute menu css */
 .absolute_menu{
     position: absolute;
@@ -6103,7 +6044,6 @@ h2 span.highlight {
     /* margin: 0 auto; */
     text-align: start;
     width: 80%;
-    padding-top: 65px;
 }
 .inner_slider_content h1 {
     font-size: 20px;
